@@ -1,0 +1,44 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .hero {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+
+    span {
+      font-size: 100px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  h1 {
+    margin: 1rem;
+    font-size: 2.3rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    .card {
+      width: 40%;
+      margin: 1rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+      padding: 1rem;
+      h3 {
+        text-align: center;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

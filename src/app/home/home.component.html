@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="hero"><span>SPACE-X</span></div>
+  <h1>Rockets</h1>
+  <div class="wrapper">
+    <div class="card" *ngFor="let rocket of rockets | async">
+      <h3>{{ rocket.name }}</h3>
+      <h4>Highlight's</h4>
+      <p>Height: {{ rocket.height.meters }} meters</p>
+      <p>Cost: ${{ rocket.cost_per_launch }}</p>
+      <p>Active: {{ rocket.active ? "Yes" : "No" }}</p>
+
+      <h4>Description</h4>
+      <p>{{ rocket.description }}</p>
+      <a href="{{ rocket.wikipedia }}">More info</a>
+    </div>
+  </div>
+</div>
